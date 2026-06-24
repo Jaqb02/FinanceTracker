@@ -23,6 +23,12 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthorization();
 
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<FinanceDbContext>();
+    await DbInitializer.SeedAsync(dbContext);
+}
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
