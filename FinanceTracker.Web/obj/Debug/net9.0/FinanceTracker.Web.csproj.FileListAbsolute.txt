@@ -234,3 +234,4 @@ C:\Users\kubak\FinanceTracker\FinanceTracker.Web\obj\Debug\net9.0\refint\Finance
 C:\Users\kubak\FinanceTracker\FinanceTracker.Web\obj\Debug\net9.0\FinanceTracker.Web.pdb
 C:\Users\kubak\FinanceTracker\FinanceTracker.Web\obj\Debug\net9.0\FinanceTracker.Web.genruntimeconfig.cache
 C:\Users\kubak\FinanceTracker\FinanceTracker.Web\obj\Debug\net9.0\ref\FinanceTracker.Web.dll
+C:\Users\kubak\FinanceTracker\FinanceTracker.web\obj\Debug\net9.0\FinanceTracker.Web.sourcelink.json

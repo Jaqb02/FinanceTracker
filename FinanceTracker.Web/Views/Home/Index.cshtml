@@ -1,8 +1,52 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model FinanceTracker.Application.DTOs.DashboardSummaryDto
+@{
+    ViewData["Title"] = "Dashboard";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-4">
+    <h1 class="mb-4">Dashboard</h1>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Łączne saldo</h5>
+                    <p class="card-text display-6">@Model.TotalBalance.ToString("C")</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Transakcje w tym miesiącu</h5>
+                    <p class="card-text display-6">@Model.CurrentMonthTransactionsCount</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="mt-4">Ostatnie transakcje</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Konto</th>
+                <th>Kategoria</th>
+                <th>Kwota</th>
+                <th>Notatka</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var t in Model.RecentTransactions)
+            {
+                <tr>
+                    <td>@t.Date.ToShortDateString()</td>
+                    <td>@t.AccountName</td>
+                    <td>@t.CategoryName</td>
+                    <td>@t.Amount.ToString("C")</td>
+                    <td>@t.Note</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>

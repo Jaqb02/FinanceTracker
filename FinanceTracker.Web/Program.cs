@@ -1,13 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 using FinanceTracker.Infrastructure.Data;
+using FinanceTracker.Application.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add DbContext with connection string
 builder.Services.AddDbContext<FinanceDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Add MVC controllers and views
+builder.Services.AddScoped<IDashboardService, DashboardService>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

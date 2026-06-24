@@ -9,3 +9,4 @@ C:\Users\kubak\FinanceTracker\FinanceTracker.Domain\obj\Debug\net9.0\FinanceTrac
 C:\Users\kubak\FinanceTracker\FinanceTracker.Domain\obj\Debug\net9.0\refint\FinanceTracker.Domain.dll
 C:\Users\kubak\FinanceTracker\FinanceTracker.Domain\obj\Debug\net9.0\FinanceTracker.Domain.pdb
 C:\Users\kubak\FinanceTracker\FinanceTracker.Domain\obj\Debug\net9.0\ref\FinanceTracker.Domain.dll
+C:\Users\kubak\FinanceTracker\FinanceTracker.Domain\obj\Debug\net9.0\FinanceTracker.Domain.sourcelink.json

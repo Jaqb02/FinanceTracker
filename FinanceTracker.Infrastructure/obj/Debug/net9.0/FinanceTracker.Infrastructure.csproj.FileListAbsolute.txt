@@ -15,3 +15,4 @@ C:\Users\kubak\FinanceTracker\FinanceTracker.Infrastructure\obj\Debug\net9.0\ref
 C:\Users\kubak\FinanceTracker\FinanceTracker.Infrastructure\obj\Debug\net9.0\FinanceTracker.Infrastructure.pdb
 C:\Users\kubak\FinanceTracker\FinanceTracker.Infrastructure\obj\Debug\net9.0\FinanceTracker.Infrastructure.genruntimeconfig.cache
 C:\Users\kubak\FinanceTracker\FinanceTracker.Infrastructure\obj\Debug\net9.0\ref\FinanceTracker.Infrastructure.dll
+C:\Users\kubak\FinanceTracker\FinanceTracker.Infrastructure\obj\Debug\net9.0\FinanceTracker.Infrastructure.sourcelink.json
