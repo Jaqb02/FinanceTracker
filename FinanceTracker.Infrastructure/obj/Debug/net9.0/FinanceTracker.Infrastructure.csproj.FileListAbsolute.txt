@@ -1,0 +1,17 @@
+C:\Users\kubak\FinanceTracker\FinanceTracker.Infrastructure\bin\Debug\net9.0\FinanceTracker.Infrastructure.deps.json
+C:\Users\kubak\FinanceTracker\FinanceTracker.Infrastructure\bin\Debug\net9.0\FinanceTracker.Infrastructure.runtimeconfig.json
+C:\Users\kubak\FinanceTracker\FinanceTracker.Infrastructure\bin\Debug\net9.0\FinanceTracker.Infrastructure.dll
+C:\Users\kubak\FinanceTracker\FinanceTracker.Infrastructure\bin\Debug\net9.0\FinanceTracker.Infrastructure.pdb
+C:\Users\kubak\FinanceTracker\FinanceTracker.Infrastructure\bin\Debug\net9.0\FinanceTracker.Domain.dll
+C:\Users\kubak\FinanceTracker\FinanceTracker.Infrastructure\bin\Debug\net9.0\FinanceTracker.Domain.pdb
+C:\Users\kubak\FinanceTracker\FinanceTracker.Infrastructure\obj\Debug\net9.0\FinanceTracker.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\kubak\FinanceTracker\FinanceTracker.Infrastructure\obj\Debug\net9.0\FinanceTracker.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kubak\FinanceTracker\FinanceTracker.Infrastructure\obj\Debug\net9.0\FinanceTracker.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\kubak\FinanceTracker\FinanceTracker.Infrastructure\obj\Debug\net9.0\FinanceTracker.Infrastructure.AssemblyInfo.cs
+C:\Users\kubak\FinanceTracker\FinanceTracker.Infrastructure\obj\Debug\net9.0\FinanceTracker.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\kubak\FinanceTracker\FinanceTracker.Infrastructure\obj\Debug\net9.0\FinanceT.DB2F2188.Up2Date
+C:\Users\kubak\FinanceTracker\FinanceTracker.Infrastructure\obj\Debug\net9.0\FinanceTracker.Infrastructure.dll
+C:\Users\kubak\FinanceTracker\FinanceTracker.Infrastructure\obj\Debug\net9.0\refint\FinanceTracker.Infrastructure.dll
+C:\Users\kubak\FinanceTracker\FinanceTracker.Infrastructure\obj\Debug\net9.0\FinanceTracker.Infrastructure.pdb
+C:\Users\kubak\FinanceTracker\FinanceTracker.Infrastructure\obj\Debug\net9.0\FinanceTracker.Infrastructure.genruntimeconfig.cache
+C:\Users\kubak\FinanceTracker\FinanceTracker.Infrastructure\obj\Debug\net9.0\ref\FinanceTracker.Infrastructure.dll
