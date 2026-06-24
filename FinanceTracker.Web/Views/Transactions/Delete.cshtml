@@ -1,0 +1,31 @@
+@model FinanceTracker.Application.DTOs.TransactionDto
+@{
+    ViewData["Title"] = "Usuń transakcję";
+}
+
+<div class="container mt-4">
+    <h1>Czy na pewno chcesz usunąć tę transakcję?</h1>
+
+    <dl class="row">
+        <dt class="col-sm-2">Data</dt>
+        <dd class="col-sm-10">@Model.Date.ToShortDateString()</dd>
+
+        <dt class="col-sm-2">Konto</dt>
+        <dd class="col-sm-10">@Model.AccountName</dd>
+
+        <dt class="col-sm-2">Kategoria</dt>
+        <dd class="col-sm-10">@Model.CategoryName</dd>
+
+        <dt class="col-sm-2">Kwota</dt>
+        <dd class="col-sm-10">@Model.Amount.ToString("C")</dd>
+
+        <dt class="col-sm-2">Notatka</dt>
+        <dd class="col-sm-10">@Model.Note</dd>
+    </dl>
+
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Usuń</button>
+        <a asp-action="Index" class="btn btn-secondary">Anuluj</a>
+    </form>
+</div>

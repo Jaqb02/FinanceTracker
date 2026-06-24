@@ -28,7 +28,7 @@ public class DashboardService : IDashboardService
             .Include(t => t.Account)
             .Include(t => t.Category)
             .OrderByDescending(t => t.Date)
-            .Take(5)
+            .Take(10)
             .Select(t => new RecentTransactionDto
             {
                 AccountName = t.Account.Name,

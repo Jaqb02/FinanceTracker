@@ -1,0 +1,50 @@
+@model FinanceTracker.Application.DTOs.CreateTransactionDto
+@{
+    ViewData["Title"] = "Dodaj transakcję";
+}
+
+<div class="container mt-4">
+    <h1>Dodaj nową transakcję</h1>
+
+    <form asp-action="Create" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="mb-3">
+            <label asp-for="AccountId" class="form-label">Konto</label>
+            <select asp-for="AccountId" class="form-select" asp-items="ViewBag.Accounts">
+                <option value="">-- Wybierz konto --</option>
+            </select>
+            <span asp-validation-for="AccountId" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="CategoryId" class="form-label">Kategoria</label>
+            <select asp-for="CategoryId" class="form-select" asp-items="ViewBag.Categories">
+                <option value="">-- Wybierz kategorię --</option>
+            </select>
+            <span asp-validation-for="CategoryId" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Amount" class="form-label">Kwota</label>
+            <input asp-for="Amount" class="form-control" type="number" step="0.01" />
+            <span asp-validation-for="Amount" class="text-danger"></span>
+            <div class="form-text">Użyj wartości ujemnej dla wydatku, dodatniej dla przychodu.</div>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Date" class="form-label">Data</label>
+            <input asp-for="Date" class="form-control" type="date" />
+            <span asp-validation-for="Date" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Note" class="form-label">Notatka</label>
+            <input asp-for="Note" class="form-control" />
+            <span asp-validation-for="Note" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-success">Zapisz</button>
+        <a asp-action="Index" class="btn btn-secondary">Anuluj</a>
+    </form>
+</div>

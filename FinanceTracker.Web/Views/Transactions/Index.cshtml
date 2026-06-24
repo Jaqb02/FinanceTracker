@@ -1,0 +1,74 @@
+@model List<FinanceTracker.Application.DTOs.TransactionDto>
+@{
+    ViewData["Title"] = "Transakcje";
+}
+
+<div class="container mt-4">
+    <h1>Transakcje</h1>
+    <p>
+        <a asp-action="Create" class="btn btn-primary">Dodaj nową transakcję</a>
+    </p>
+
+    <!-- Filtry -->
+    <form method="get" class="row g-3 mb-4">
+        <div class="col-md-3">
+            <label class="form-label">Od</label>
+            <input type="date" name="from" class="form-control" value="@Context.Request.Query["from"]">
+        </div>
+        <div class="col-md-3">
+            <label class="form-label">Do</label>
+            <input type="date" name="to" class="form-control" value="@Context.Request.Query["to"]">
+        </div>
+        <div class="col-md-2">
+            <label class="form-label">Kategoria</label>
+            <select name="categoryId" class="form-select" asp-items="ViewBag.Categories">
+                <option value="">Wszystkie</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <label class="form-label">Konto</label>
+            <select name="accountId" class="form-select" asp-items="ViewBag.Accounts">
+                <option value="">Wszystkie</option>
+            </select>
+        </div>
+        <div class="col-md-2 d-flex align-items-end">
+            <button type="submit" class="btn btn-outline-primary w-100">Filtruj</button>
+        </div>
+    </form>
+
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-success">@TempData["Message"]</div>
+    }
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Konto</th>
+                <th>Kategoria</th>
+                <th>Kwota</th>
+                <th>Notatka</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var t in Model)
+            {
+                <tr>
+                    <td>@t.Date.ToShortDateString()</td>
+                    <td>@t.AccountName</td>
+                    <td>@t.CategoryName</td>
+                    <td class="@(t.Amount >= 0 ? "text-success" : "text-danger")">
+                        @t.Amount.ToString("C")
+                    </td>
+                    <td>@t.Note</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@t.Id" class="btn btn-sm btn-warning">Edytuj</a>
+                        <a asp-action="Delete" asp-route-id="@t.Id" class="btn btn-sm btn-danger">Usuń</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
