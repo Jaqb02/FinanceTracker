@@ -35,7 +35,7 @@ public class DashboardService : IDashboardService
                 CategoryName = t.Category.Name,
                 Amount = t.Amount,
                 Date = t.Date,
-                Note = t.Note
+                Note = t.Notes
             })
             .ToListAsync();
 

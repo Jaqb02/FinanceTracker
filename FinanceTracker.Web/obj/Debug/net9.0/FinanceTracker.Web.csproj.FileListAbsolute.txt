@@ -235,3 +235,8 @@ C:\Users\kubak\FinanceTracker\FinanceTracker.Web\obj\Debug\net9.0\FinanceTracker
 C:\Users\kubak\FinanceTracker\FinanceTracker.Web\obj\Debug\net9.0\FinanceTracker.Web.genruntimeconfig.cache
 C:\Users\kubak\FinanceTracker\FinanceTracker.Web\obj\Debug\net9.0\ref\FinanceTracker.Web.dll
 C:\Users\kubak\FinanceTracker\FinanceTracker.web\obj\Debug\net9.0\FinanceTracker.Web.sourcelink.json
+C:\Users\kubak\FinanceTracker\FinanceTracker.Web\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\kubak\FinanceTracker\FinanceTracker.Web\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\kubak\FinanceTracker\FinanceTracker.Web\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\kubak\FinanceTracker\FinanceTracker.Web\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\kubak\FinanceTracker\FinanceTracker.Web\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll

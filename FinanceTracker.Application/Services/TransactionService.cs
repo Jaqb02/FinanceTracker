@@ -37,7 +37,7 @@ public class TransactionService : ITransactionService
             {
                 Id = t.Id,
                 Amount = t.Amount,
-                Note = t.Note,
+                Note = t.Notes,
                 Date = t.Date,
                 AccountName = t.Account.Name,
                 CategoryName = t.Category.Name,
@@ -57,7 +57,7 @@ public class TransactionService : ITransactionService
             {
                 Id = t.Id,
                 Amount = t.Amount,
-                Note = t.Note,
+                Note = t.Notes,
                 Date = t.Date,
                 AccountName = t.Account.Name,
                 CategoryName = t.Category.Name,
@@ -73,10 +73,12 @@ public class TransactionService : ITransactionService
         var transaction = new Transaction
         {
             Amount = dto.Amount,
-            Note = dto.Note,
+            Notes = dto.Note,
+            Description = dto.Note ?? string.Empty,
             Date = dto.Date,
             AccountId = dto.AccountId,
-            CategoryId = dto.CategoryId
+            CategoryId = dto.CategoryId,
+            Type = dto.Amount >= 0 ? TransactionType.Income : TransactionType.Expense
         };
         _context.Transactions.Add(transaction);
 
@@ -104,10 +106,12 @@ public class TransactionService : ITransactionService
 
         // 2. Nadpisz właściwości
         transaction.Amount = dto.Amount;
-        transaction.Note = dto.Note;
+        transaction.Notes = dto.Note;
+        transaction.Description = dto.Note ?? string.Empty;
         transaction.Date = dto.Date;
         transaction.AccountId = dto.AccountId;
         transaction.CategoryId = dto.CategoryId;
+        transaction.Type = dto.Amount >= 0 ? TransactionType.Income : TransactionType.Expense;
 
         // 3. Zastosuj nowy wpływ (jeśli zmieniło się konto, pobierz nowe)
         var newAccount = await _context.Accounts.FindAsync(dto.AccountId);
@@ -142,7 +146,7 @@ public class TransactionService : ITransactionService
     public async Task<List<CategoryDto>> GetCategoriesAsync()
     {
         return await _context.Categories
-            .Select(c => new CategoryDto { Id = c.Id, Name = c.Name, Type = c.Type })
+            .Select(c => new CategoryDto { Id = c.Id, Name = c.Name, Type = c.Type.ToString() })
             .ToListAsync();
     }
 }

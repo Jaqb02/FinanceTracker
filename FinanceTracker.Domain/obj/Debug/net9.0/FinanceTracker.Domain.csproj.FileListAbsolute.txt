@@ -10,3 +10,4 @@ C:\Users\kubak\FinanceTracker\FinanceTracker.Domain\obj\Debug\net9.0\refint\Fina
 C:\Users\kubak\FinanceTracker\FinanceTracker.Domain\obj\Debug\net9.0\FinanceTracker.Domain.pdb
 C:\Users\kubak\FinanceTracker\FinanceTracker.Domain\obj\Debug\net9.0\ref\FinanceTracker.Domain.dll
 C:\Users\kubak\FinanceTracker\FinanceTracker.Domain\obj\Debug\net9.0\FinanceTracker.Domain.sourcelink.json
+C:\Users\kubak\FinanceTracker\FinanceTracker.Domain\obj\Debug\net9.0\FinanceTracker.Domain.csproj.AssemblyReference.cache
